@@ -11,7 +11,8 @@ flask = "*"
 psycopg2 = "*"
 flask-sqlalchemy = "*"
 xlsxwriter = "*"
-logging = "*"
+# Logging é uma biblioteca padrão do Python, não é necessário instalar
+#logging = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.12.6"

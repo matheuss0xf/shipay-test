@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:15.8-alpine3.20
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+    postgres_data:
